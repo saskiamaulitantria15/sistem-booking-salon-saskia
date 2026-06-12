@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💖 Beauty Glow Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff7fb;
+color:#333;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#ff4f9a;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#ffd6ea,#fff);
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+color:#ff4f9a;
+}
+
+.hero p{
+margin:15px 0;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#ff4f9a;
+color:white;
+border-radius:30px;
+text-decoration:none;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+color:#ff4f9a;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.price{
+font-weight:bold;
+color:#ff4f9a;
+margin-top:10px;
+}
+
+.booking-box{
+max-width:850px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+input,
+select{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#ff4f9a;
+border:none;
+color:white;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+th{
+background:#ff4f9a;
+color:white;
+padding:12px;
+}
+
+td{
+padding:10px;
+border:1px solid #eee;
+text-align:center;
+}
+
+.delete-btn{
+background:red;
+padding:8px;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+background:#ff4f9a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:35px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+💖 Beauty Glow
+</div>
+
+<ul>
+<li><a href="#layanan">💇‍♀️ Layanan</a></li>
+<li><a href="#booking">📝 Booking</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>✨ Beauty Glow Salon ✨</h1>
+
+<p>
+💖 Salon modern dengan pelayanan terbaik
+untuk kecantikan dan perawatan rambut.
+</p>
+
+<a href="#booking" class="btn">
+🌸 Booking Sekarang
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">
+🌷 Tentang Kami
+</h2>
+
+<div class="card">
+
+💖 Beauty Glow Salon menyediakan layanan
+Hair Cut, Hair Spa, Hair Coloring,
+serta Manicure & Pedicure.
+
+<br><br>
+
+✨ Kami mengutamakan kenyamanan,
+kebersihan, dan pelayanan terbaik
+untuk setiap pelanggan.
+
+</div>
+
+</section>
+
+<section id="layanan">
+
+<h2 class="title">
+💇‍♀️ Layanan Kami
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>✂️ Hair Cut</h3>
+<p>Potong rambut profesional.</p>
+<div class="price">Rp50.000</div>
+</div>
+
+<div class="card">
+<h3>🌿 Hair Spa</h3>
+<p>Perawatan rambut premium.</p>
+<div class="price">Rp120.000</div>
+</div>
+
+<div class="card">
+<h3>🎨 Hair Coloring</h3>
+<p>Pewarnaan rambut modern.</p>
+<div class="price">Rp250.000</div>
+</div>
+
+<div class="card">
+<h3>💅 Manicure & Pedicure</h3>
+<p>Perawatan kuku lengkap.</p>
+<div class="price">Rp80.000</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">
+⭐ Testimoni Pelanggan
+</h2>
+
+<div class="grid">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<br><br>
+💖 "Hasil hair spa sangat memuaskan!"
+<br><br>
+<b>- Siti</b>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<br><br>
+🌸 "Salon favorit saya sekarang."
+<br><br>
+<b>- Ayu</b>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<br><br>
+✨ "Pelayanan ramah dan tempat nyaman."
+<br><br>
+<b>- Nabila</b>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="grid">
+
+<div class="card">
+<h1>💖 1000+</h1>
+<p>Pelanggan</p>
+</div>
+
+<div class="card">
+<h1>👩‍🎨 15</h1>
+<p>Beautician</p>
+</div>
+
+<div class="card">
+<h1>⭐ 4.9</h1>
+<p>Rating</p>
+</div>
+
+<div class="card">
+<h1>🏆 5 Tahun</h1>
+<p>Pengalaman</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2 class="title">
+📝 Booking Online
+</h2>
+
+<div class="booking-box">
+
+<form id="bookingForm">
+
+<input type="text" id="nama" placeholder="👤 Nama Pelanggan" required>
+
+<input type="text" id="hp" placeholder="📱 Nomor HP" required>
+
+<select id="layanan">
+
+<option>✂️ Hair Cut</option>
+<option>🌿 Hair Spa</option>
+<option>🎨 Hair Coloring</option>
+<option>💅 Manicure & Pedicure</option>
+
+</select>
+
+<input type="date" id="tanggal" required>
+
+<button type="submit">
+🌸 Booking Sekarang
+</button>
+
+</form>
+
+<table id="bookingTable">
+
+<tr>
+<th>Nama</th>
+<th>No HP</th>
+<th>Layanan</th>
+<th>Tanggal</th>
+<th>Aksi</th>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<footer>
+
+💖 Beauty Glow Salon 💖
+
+<br><br>
+
+✨ Sistem Booking Salon Online
+
+<br>
+
+👩‍💻 Dibuat oleh: Nabila Amanda & Saskia Mauli Tantria
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+let bookings =
+JSON.parse(localStorage.getItem("bookings")) || [];
+  
+emailjs.init("PvIXQW0HIBRoFvzVz");
+const form =
+document.getElementById("bookingForm");
+
+const table =
+document.getElementById("bookingTable");
+
+function tampilkanData(){
+
+table.innerHTML = `
+<tr>
+<th>Nama</th>
+<th>No HP</th>
+<th>Layanan</th>
+<th>Tanggal</th>
+<th>Aksi</th>
+</tr>
+`;
+
+bookings.forEach((item,index)=>{
+
+table.innerHTML += `
+<tr>
+<td>${item.nama}</td>
+<td>${item.hp}</td>
+<td>${item.layanan}</td>
+<td>${item.tanggal}</td>
+<td>
+<button class="delete-btn"
+onclick="hapusBooking(${index})">
+❌
+</button>
+</td>
+</tr>
+`;
+
+});
+
+}
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const data = {
+
+nama:
+document.getElementById("nama").value,
+
+hp:
+document.getElementById("hp").value,
+
+layanan:
+document.getElementById("layanan").value,
+
+tanggal:
+document.getElementById("tanggal").value
+
+};
+bookings.push(data);
+
+localStorage.setItem(
+"bookings",
+JSON.stringify(bookings)
+);
+
+emailjs.send(
+"service_ra91f3t",
+"template_uduh27d",
+{
+nama: data.nama,
+hp: data.hp,
+layanan: data.layanan,
+tanggal: data.tanggal
+}
+)
+.then(function(){
+
+alert(
+"🎉 Booking berhasil disimpan dan notifikasi email telah dikirim!"
+);
+
+})
+.catch(function(error){
+
+console.error(error);
+
+alert(
+"Booking tersimpan, tetapi email gagal dikirim."
+);
+
+});
+
+tampilkanData();
+form.reset();
+  
+});
+  
+function hapusBooking(index){
+
+bookings.splice(index,1);
+
+localStorage.setItem(
+"bookings",
+JSON.stringify(bookings)
+);
+
+tampilkanData();
+
+}
+
+tampilkanData();
+
+</script>
+
+</body>
+</html>
